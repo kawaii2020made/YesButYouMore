@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesButYouMore", "YesButYouMore\YesButYouMore.csproj", "{2CA0A56E-E3A4-469F-9780-046392AA3CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesButYouMoreViewModel", "YesButYouMoreViewModel\YesButYouMoreViewModel.csproj", "{973D2450-F52F-4A8E-A08E-7E920A394543}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CA0A56E-E3A4-469F-9780-046392AA3CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA0A56E-E3A4-469F-9780-046392AA3CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA0A56E-E3A4-469F-9780-046392AA3CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA0A56E-E3A4-469F-9780-046392AA3CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973D2450-F52F-4A8E-A08E-7E920A394543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973D2450-F52F-4A8E-A08E-7E920A394543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973D2450-F52F-4A8E-A08E-7E920A394543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973D2450-F52F-4A8E-A08E-7E920A394543}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76027A5F-9FF1-4C04-B20B-F24A30A71325}
+	EndGlobalSection
+EndGlobal

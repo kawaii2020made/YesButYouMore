@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="YesButYouMore.IntroView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YesButYouMore"
+             xmlns:vm="clr-namespace:YesButYouMoreViewModel;assembly=YesButYouMoreViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="450">
+    <UserControl.DataContext>
+        <vm:IntroViewModel/>
+    </UserControl.DataContext>
+
+    <Grid Background="{StaticResource LightBlackBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Top Part-->
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0"
+                    Content="{Binding TxtTopButton}"
+                    Style="{StaticResource BigButton}"
+                    Command="{Binding TopButtonCommand}"/>
+
+            <TextBlock Grid.Row="1"
+                       Text="{Binding TxtTopPart}"
+                       FontSize="64"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="{StaticResource DarkWhiteBrush}"/>
+        </Grid>
+        <!--Bottom Part-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       FontSize=" 64"
+                       Foreground="{StaticResource DarkWhiteBrush}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="{Binding TxtBottomPart}"/>
+
+            <Button Content="{Binding TxtBottomButton}"
+                    Command="{Binding NavFinalCommand}"
+                    Grid.Row="1"
+                    Style="{StaticResource BigButton}"/>
+        </Grid>
+    </Grid>
+</UserControl>
